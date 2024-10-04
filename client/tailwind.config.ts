@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        authSvg: "url('/assets/login-SADG.svg')",
+        logo: "url('/assets/logo.svg')",
+      },
     },
   },
   plugins: [],
