@@ -1,8 +1,5 @@
-import { Application } from "express";
-
-const express = require("express");
-const dotenv = require("dotenv");
-
+import express, { Application } from "express";
+import dotenv from "dotenv";
 import colors from "colors";
 
 dotenv.config({
