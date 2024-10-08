@@ -1,12 +1,16 @@
 import express, { Application } from "express";
 import dotenv from "dotenv";
 import colors from "colors";
+import { connectDB } from "./config/db";
 
 dotenv.config({
   path: "./config/config.env",
 });
 
 const PORT = process.env.PORT;
+
+// connect to db
+connectDB();
 
 const app: Application = express();
 
