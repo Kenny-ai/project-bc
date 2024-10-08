@@ -2,7 +2,8 @@ import { Application } from "express";
 
 const express = require("express");
 const dotenv = require("dotenv");
-const colors = require("colors");
+
+import colors from "colors";
 
 dotenv.config({
   path: "./config/config.env",
@@ -13,7 +14,7 @@ const PORT = process.env.PORT;
 const app: Application = express();
 
 const server = app.listen(PORT, (): void =>
-  console.log(colors.magenta(`Server running on PORT ${PORT}`.bold))
+  console.log(`Server running on PORT ${PORT}`.magenta.bold)
 );
 
 // Handle Promise rejections
